@@ -19,38 +19,38 @@ function dragStart()
 {
     this.className += ' hold';
     setTimeout(() => this.className = 'invisible',0);
-    console.log('start');
+    // console.log('start');
 }
 
 function dragEnd()
 {
     this.className = 'fill';
-    console.log('end');
+    // console.log('end');
 }
 
 function dragOver(e)
 {
     e.preventDefault();
 
-    console.log('over');
+    // console.log('over');
 }
 
 function dragEnter(e)
 {
     e.preventDefault();
     this.className += ' hovered';
-    console.log('enter');
+    // console.log('enter');
 }
 
 function dragLeave()
 {
     this.className = 'empty'
-    console.log('leave');
+    // console.log('leave');
 }
 
 function dragDrop()
 {
     this.className = 'empty';
     this.append(fill); 
-    console.log('drop');
+    // console.log('drop');
 }
