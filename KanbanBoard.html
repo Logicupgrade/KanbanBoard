@@ -7,46 +7,64 @@
     <title>Kanban Board</title>
 </head>
 <body>
-    <header> <h1>KanBan Bitches</h1></header>
-    <div class="columns-container">
-        <div class="nav"></div>
-
-        <div class="column">
-            <h1>To Do</h1>
-            <div class="empty">
-                <div class="fill" draggable="true">Make Board!</div>
+    <div class="header-slide">
+        <header> <h1>KanBan</h1></header>
+    </div>
+    
+    <div class="grid-container">
+        <div class="nav">
+            <form action="">
+                <label for="fname">First Name</label>
+                <input type="text">
+                <label for="lname">Last Name</label>
+                <input type="text">
+                <label for="title">Title</label>
+                <input type="text">
+                <label for="description">Description</label>
+                <input type="text">
+                <button> Make Card</button>
+            </form>
+            
+        </div>
+        <div class="columns-container">
+            
+            <div class="column">
+                <h1>To Do</h1>
+                <div class="empty">
+                    <div class="fill" draggable="true">Make Board!</div>
+                </div>
+                <div class="empty"></div>
+                <div class="empty"></div>
+                <div class="empty"></div>
+                <div class="empty"></div>
+                <div class="empty"></div>
             </div>
-            <div class="empty"></div>
-            <div class="empty"></div>
-            <div class="empty"></div>
-            <div class="empty"></div>
-            <div class="empty"></div>
-        </div>
 
-        <div class="column">
-            <h1>In Process</h1>
-            <div class="empty"></div>
-            <div class="empty"></div>
-            <div class="empty"></div>
-            <div class="empty"></div>
-            <div class="empty"></div>
-            <div class="empty"></div>
-        </div>
-        
-        <div class="column">
-            <h1>Done</h1>
-            <div class="empty"></div>
-            <div class="empty"></div>
-            <div class="empty"></div>
-            <div class="empty"></div>
-            <div class="empty"></div>
-            <div class="empty"></div>
-        </div>
+            <div class="column">
+                <h1>In Process</h1>
+                <div class="empty"></div>
+                <div class="empty"></div>
+                <div class="empty"></div>
+                <div class="empty"></div>
+                <div class="empty"></div>
+                <div class="empty"></div>
+            </div>
+            
+            <div class="column">
+                <h1>Done</h1>
+                <div class="empty"></div>
+                <div class="empty"></div>
+                <div class="empty"></div>
+                <div class="empty"></div>
+                <div class="empty"></div>
+                <div class="empty"></div>
+            </div>
 
-        <!-- <div class="column">
-            <h1>Done</h1>
-            <div class="empty"></div>
-        </div> -->    
+            <div class="column">
+                <h1>Done</h1>
+                <div class="empty"></div> 
+        </div>
+    </div>    
 
     <script src="js/dragNDrop.js"></script>
 </body>

@@ -1,18 +1,25 @@
 body
 {
-    background: rgb(0, 160, 204);
-    
+    /* display: grid;
+    */
+    background: rgb(0, 160, 204); 
+}
 
-   
+.header-slide
+{
+    display: block;
+    height:85px;
+    border-bottom:black 1px solid;
+    margin-bottom: 10px;
 }
 
 header
 {
-
+    position: fixed;
     display: block;
     background-color:rgb(0, 160, 204);
     height: 50px;
-    width: 100%;
+    width: 250px;
     border: rgb(23, 213, 247) 1px solid;
     text-align: center;
     text-shadow: rgb(125, 228, 247) 1px 1px;
@@ -29,13 +36,63 @@ header h1
     padding:0;
 }
 
+.grid-container
+{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap:10px;
+    justify-content: start;
+}
+
+.nav
+{
+    display: inline-grid;
+    height: inherit;
+    width: 150px;
+    border:1px dotted rgb(23, 213, 247);
+    box-sizing: border-box;
+}
+
+form
+{
+    display: block;
+    height: max-content;
+    margin-top:10px;
+    /* border: red 1px solid; */
+}
+
+label
+{
+    display: block;
+    width:100px;
+    margin:0 auto;
+    text-align: center;
+    
+}
+
+input
+{
+    display: block;
+    width:100px;
+    margin: 0 auto;
+    /* margin-bottom:50px; */
+}
+
+button
+{
+    display: block;
+    width:50px;
+    height: 50px;
+    margin:15px auto;
+}
+
 .columns-container
 {
-    display:grid;
-    justify-content: start;
-    grid-template-columns: 100px repeat(3,180px);
+    display:inline-grid;
+    grid-template-columns: repeat(4,180px);
     grid-auto-rows: minmax(80vh, auto);
     grid-column-gap: 10px;
+    padding-right:20px;
 
      /* border:red 1px dotted; */
 }
@@ -57,7 +114,6 @@ header h1
 .column h1
 {
     margin: 0 auto;
-
     text-decoration: underline black;
     /* border:red solid 1px; */
     width:80%;
@@ -83,10 +139,7 @@ header h1
     box-sizing: border-box;
 }
 
-.nav
-{
-    border:1px dotted rgb(23, 213, 247);
-}
+
 
 .empty
 {
@@ -97,7 +150,7 @@ header h1
     margin:10px;
     border:1px rgb(23, 213, 247) solid;
     background-color:rgb(0, 160, 204);
-
+    border-radius: 5px;
     box-sizing: border-box;
 }
 
