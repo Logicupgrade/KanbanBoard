@@ -3,19 +3,25 @@ body
     /* display: grid;
     */
     background: rgb(0, 160, 204); 
+    margin:0;
+    padding:0;
 }
 
 .header-slide
 {
-    display: block;
-    height:85px;
+    position: fixed;
+    height:100px;
+    width:100%;
     border-bottom:black 1px solid;
     margin-bottom: 10px;
+    background: rgb(0, 160, 204);
+
+    z-index: 5;
 }
 
 header
 {
-    position: fixed;
+    
     display: block;
     background-color:rgb(0, 160, 204);
     height: 50px;
@@ -24,10 +30,10 @@ header
     text-align: center;
     text-shadow: rgb(125, 228, 247) 1px 1px;
     font-size:30px;
-    margin-bottom: 10px;
+    margin: 10px;
     padding-bottom: 20px;
     border-radius: 5px;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 header h1
@@ -36,21 +42,25 @@ header h1
     padding:0;
 }
 
-.grid-container
-{
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-column-gap:10px;
-    justify-content: start;
-}
-
 .nav
 {
-    display: inline-grid;
-    height: inherit;
-    width: 150px;
+    
+    /* display: inline-grid; */
+    position:fixed;
+    height: 350px;
+    width: 200px;
     border:1px dotted rgb(23, 213, 247);
     box-sizing: border-box;
+    margin-top: 110px;
+    margin-left: 10px;
+    background: rgb(0, 160, 204);
+
+    z-index:5;
+}
+
+#nav-card
+{
+    margin: 0 0 0 18px;
 }
 
 form
@@ -88,11 +98,14 @@ button
 
 .columns-container
 {
+    margin-top: 110px;
+    margin-left:220px;
     display:inline-grid;
     grid-template-columns: repeat(4,180px);
     grid-auto-rows: minmax(80vh, auto);
     grid-column-gap: 10px;
     padding-right:20px;
+
 
      /* border:red 1px dotted; */
 }
@@ -147,7 +160,7 @@ button
     /* visibility: hidden; */
     height: 60px;
     width: 160px;
-    margin:10px;
+    margin:5px;
     border:1px rgb(23, 213, 247) solid;
     background-color:rgb(0, 160, 204);
     border-radius: 5px;
