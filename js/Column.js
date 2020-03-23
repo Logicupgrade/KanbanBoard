@@ -1,8 +1,8 @@
 class Column
 {
-    constructor()
+    constructor(columnIndex,title)
     {
-        this.columnIndex = 0;
-        this.title = "";
+        this.columnIndex = columnIndex;
+        this.title = title;
     }
 }
