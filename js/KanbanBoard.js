@@ -4,10 +4,20 @@ class KanbanBoard
     {
         this.columnCount = 0;
         this.postCount = 0;
+
+        //row count times 6
+        this.highestRowCount6 = 1;
     }
 
-    addColumnToDOM(columnPosition)
+    addColumnDOM(columnId,columnTitle)
     {
-        current_column = new Column(columnPosition);
+        current_column = new Column(columnId,columnTitle);
     }
+
+    //removeColumnDOM
+
+    // createCard
+    // removeCard
+    // getCardPosition(cardID)
+    // getCardTitle(cardID)
 }
