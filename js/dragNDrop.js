@@ -1,9 +1,13 @@
-const fill = document.querySelector('.fill');
+const fills = document.querySelectorAll('.fill');
 const empties = document.querySelectorAll('.empty');
+var cardID = -1;
 
-//fill listeners
-fill.addEventListener('dragstart',dragStart);
-fill.addEventListener('dragend',dragEnd);
+//Loop through empties and call drag events
+for(const fill of fills)
+{
+    fill.addEventListener('dragstart',dragStart);
+    fill.addEventListener('dragend',dragEnd);
+}
 
 //Loop through empties and call drag events
 for(const empty of empties)
@@ -17,41 +21,35 @@ for(const empty of empties)
 //drag functions
 function dragStart()
 {
+    cardID = this.id;
     this.className += ' hold';
     setTimeout(() => this.className = 'invisible',0);
-    //  console.log('start');
 }
 
 function dragEnd()
 {
-    
     this.className = 'fill';
-    //   console.log('end');
 }
 
 function dragOver(e)
 {
     e.preventDefault();
-
-    //  console.log('over');
 }
 
 function dragEnter(e)
 {
     e.preventDefault();
     this.className += ' hovered';
-    //  console.log('enter');
 }
 
 function dragLeave()
 {
     this.className = 'empty'
-    //  console.log('leave');
 }
 
 function dragDrop()
 {
+    currentCard = document.getElementById(cardID);   
     this.className = 'empty';
-    this.append(fill); 
-    //  console.log('drop');
+    this.append(currentCard);     
 }
