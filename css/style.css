@@ -62,16 +62,21 @@ header h1
 
 .button
 {
-    display: block;
-    position:fixed;
+    display: inline-block;
+    /* position:fixed; */
     background:rgb(0, 160, 204) ;
     border: rgb(23, 213, 247) 1px solid;
     width:200px;
-    float:left;
+    /* float:left; */
     margin-left:10px;
     outline:none;
     border-radius: 0 0 5px 5px;
 }
+
+.button:hover
+{
+    background-color: rgb(23, 213, 247);
+} 
 
 .nav
 {
