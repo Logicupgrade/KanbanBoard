@@ -1,0 +1,13 @@
+
+
+**include:
+
+-number of columns
+-column ids
+-column titles
+-column positions
+
+-number of cards
+-card ids
+-card titles
+-card positions

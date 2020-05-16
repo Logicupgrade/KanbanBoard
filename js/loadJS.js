@@ -1,5 +1,5 @@
 
-let ModelArray =["Post.js", "Column.js"];
+let ModelArray =["Card.js", "Column.js"];
 let ViewArray = ["DisplayKanBan.js", "dragNDrop.js"];
 let ControllerArray = ["KanbanBoard.js"];
 

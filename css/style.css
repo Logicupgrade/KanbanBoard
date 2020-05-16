@@ -84,7 +84,7 @@ header h1
     /* display: inline-grid; */
     display: block;
     position:fixed;
-    height: 350px;
+    height: 285px;
     width: 200px;
     border:1px dotted rgb(23, 213, 247);
     box-sizing: border-box;
@@ -141,13 +141,13 @@ input
     
     /* margin-left:220px; */
     margin-top:31px;
-    
     display:inline-grid;
     grid-template-columns: repeat(4,180px);
     grid-auto-rows: minmax(80vh, auto);
     grid-column-gap: 10px;
     padding-right:20px;
-
+    padding-bottom:15px;
+    height:500px;
 
      /* border:red 1px dotted; */
 }

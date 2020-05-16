@@ -1,4 +1,4 @@
-class Post
+class Card
 {
     constructor(cardId,fName,lName,cardTitle,cardDescription)
     {
