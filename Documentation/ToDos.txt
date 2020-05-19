@@ -1,0 +1,21 @@
+
+COLUMNS
+-editing column title
+-swapping column positions
+
+CARDS
+-creating card
+-generating new card upon button press
+
+STATE
+-write State to KanbanState.txt
+-read State from KanbanState.txt
+-generate board from State data
+
+
+*trick stuff*
+MOVEMENT
+-auto scrolling right and left when holding column or card
+
+
+** Possibly remove loadJS.js **

@@ -8,6 +8,9 @@
     <title>Kanban Board</title>
 
     <script src="js/View/DisplayKanban.js"></script>
+    <script src="js/Controller/KanbanBoard.js"></script>
+    <!-- instantiating entire Board here seems incorrect... maybe init file -->
+    <script>theBoard = new KanbanBoard();</script>
 
 </head>
 <body>
@@ -20,8 +23,8 @@
     <div class="tops">
         <button type="button" id="collapsible" class="button">Add Card</button>
         
-        <!-- Need to input displayColumn parameters from something -->
-        <button type="button" class="button" onclick="displayColumn(1,'start',1)">Add Column</button>
+        <!-- Need to input displayColumn title from input -->
+        <button type="button" class="button" onclick="theBoard.addColumnDOM('New')">Add Column</button>
     </div>
     
     <div class="nav content">
@@ -44,8 +47,8 @@
     </div>
     <div id="another-container">
         <div id="columns-container">
-            <div class="column">
-                <h1>To Do</h1>
+            <div class="column" id="col_1">
+                <h1 class="edit"><!-- <input></input>  -->Do</h1>
                 <div class="empty">
                     <div class="fill" draggable="true" id="2">Make Board!</div>
                 </div>
@@ -56,7 +59,7 @@
                 <div class="empty"></div>
             </div>
     
-            <div class="column">
+            <div class="column" id="col_2">
                 <h1>In Process</h1>
                 <div class="empty"></div>
                 <div class="empty"></div>
@@ -66,7 +69,7 @@
                 <div class="empty"></div>
             </div>
             
-            <div class="column">
+            <div class="column" id="col_3">
                 <h1>Done</h1>
                 <div class="empty"></div>
                 <div class="empty"></div>

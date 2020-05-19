@@ -1,21 +1,28 @@
-const fills = document.querySelectorAll('.fill');
-const empties = document.querySelectorAll('.empty');
+
 var cardID = -1;
 
-//Loop through empties and call drag events
-for(const fill of fills)
-{
-    fill.addEventListener('dragstart',dragStart);
-    fill.addEventListener('dragend',dragEnd);
-}
+initCardSlots();
 
-//Loop through empties and call drag events
-for(const empty of empties)
+function initCardSlots()
 {
-    empty.addEventListener('dragover',dragOver);
-    empty.addEventListener('dragEnter',dragEnter);
-    empty.addEventListener('dragLeave',dragLeave);
-    empty.addEventListener('drop',dragDrop);
+    const fills = document.querySelectorAll('.fill');
+    const empties = document.querySelectorAll('.empty');
+
+    //Loop through fills and call drag events
+    for(const fill of fills)
+    {
+        fill.addEventListener('dragstart',dragStart);
+        fill.addEventListener('dragend',dragEnd);
+    }
+
+    //Loop through empties and call drag events
+    for(const empty of empties)
+    {
+        empty.addEventListener('dragover',dragOver);
+        empty.addEventListener('dragEnter',dragEnter);
+        empty.addEventListener('dragLeave',dragLeave);
+        empty.addEventListener('drop',dragDrop);
+    }
 }
 
 //drag functions

@@ -134,6 +134,8 @@ input
 #another-container
 {
     margin-left:40px;
+
+    /* border:blue 1px dotted; */
 }
 
 #columns-container
@@ -169,11 +171,16 @@ input
 
 .column h1
 {
-    margin: 0 auto;
-    text-decoration: underline black;
-    /* border:red solid 1px; */
+    margin: 4px auto;
     width:80%;
+
+    /* border:red solid 1px; */
 }
+
+/* .column h1.edit
+{
+  background: white;  
+} */
 
 .fill
 {
